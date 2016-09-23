@@ -12,12 +12,12 @@ app.get('/funfacts', function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'articleone.html'));
     
 });
-app.get('/articletwo', function(req,res){ 
-    res.send('Article 2 in here');
+app.get('/b', function(req,res){ 
+     res.sendFile(path.join(__dirname, 'ui', 'articletwo.html'));
     
 });
-app.get('/articlethree', function(req,res){ 
-    res.send('Article 3 in here');
+app.get('/3', function(req,res){ 
+    res.sendFile(path.join(__dirname, 'ui', 'article3.html'));
     
 });
 app.get('/ui/style.css', function (req, res) {
