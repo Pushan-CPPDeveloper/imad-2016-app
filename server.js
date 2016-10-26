@@ -4,7 +4,21 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var 
+var articlOne={
+    title: 'First Article|Pbjee',
+    heading:'1st article',
+    date:'20 Oct, 2016',
+    content:`<p>respect to all
+               ax^2+bx+c=0
+              => x=(-bplusminus\/-(b^2-4ac))/2a </p> 
+                <p>respect to all
+               ax^2+bx+c=0
+              => x=(-bplusminus\/-(b^2-4ac))/2a </p>   <p>respect to all
+               ax^2+bx+c=0
+              => x=(-bplusminus\/-(b^2-4ac))/2a </p>   <p>respect to all
+               ax^2+bx+c=0
+              => x=(-bplusminus\/-(b^2-4ac))/2a </p> `
+};
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
