@@ -18,8 +18,7 @@ button.onclick = function() {
    request.open('GET', 'http://pushan-cppdeveloper.imad.hasura-app.io/counter', true);
    request.send(null);
 };
-var nameInput=document.getElementById("name");
-var name=nameInput.value;
+
 var submit = document.getElementById("submit_btn");
 submit.onclick=function(){
      // make request
@@ -40,6 +39,8 @@ submit.onclick=function(){
            }
        }
    };
+   var nameInput=document.getElementById("name");
+var name=nameInput.value;
    //render variable in correct span
    request.open('GET', 'http://pushan-cppdeveloper.imad.hasura-app.io/submit-name='+name, true);
    request.send(null);//request to server with name sending to it
