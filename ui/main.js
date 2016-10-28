@@ -1,13 +1,12 @@
-console.log('Loaded!');
-var element=document.getElementById("firstid");
-element.innerHTML='New and interesting stuffs';
-var img = document.getElementById("ju");
-var marginRight  =0;
-function moveLeft(){
-    marginRight=marginRight+2;
-    img.style.marginRight=marginRight+'px';
-}
-img.onclick = function() {
-    var element=setInterval(moveLeft, 45);
-    img.style.marginLeft = '120px';
+var button=document.getElementById("counter");
+var counter = 0;
+button.onclick = function() {
+   // make request
+   
+   //capture request
+   
+   //render variable in correct span
+   counter=counter+1;
+   var span = document.getElementById("count");
+   span.innerHTML=counter.toString();
 };
